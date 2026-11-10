@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Properties | Peak Properties</title>
+  <meta name="description" content="Browse homes for sale, apartments to rent and titled plots from Peak Properties.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="wrap bar"><a href="index.html" class="brand" aria-label="Peak Properties home">
+        <svg viewBox="0 0 40 32" width="34" height="28" aria-hidden="true">
+          <path d="M2 30 L15 6 L22 18 L27 10 L38 30 Z" fill="currentColor" />
+          <path d="M15 6 L19 13 L11 13 Z" fill="#c8a35a" />
+        </svg>
+        <span>Peak Properties</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav"><a href="index.html">Home</a><a href="properties.html"
+          aria-current="page">Properties</a><a href="services.html">Services</a><a href="about.html">About</a><a
+          href="contact.html" class="btn btn-small">Contact us</a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Properties</h1>
+        <p class="lead">Every listing has a verified title and an inspection report on request.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="filters" role="group" aria-label="Filter properties"><button class="chip active"
+            data-filter="all">All</button><button class="chip" data-filter="sale">For sale</button><button class="chip"
+            data-filter="rent">For rent</button><button class="chip" data-filter="land">Land</button></div>
+        <div class="cards">
+          <article class="card" data-type="sale">
+            <div class="card-art has-img">
+              <img src="property1.jpg" alt="Four-bedroom maisonette with a garden" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag">For sale</span>
+              <h3>4-bedroom family maisonette</h3>
+              <p class="meta">4 bed · 3 bath · 0.25 acre</p>
+              <p class="price">KES 28,500,000</p>
+              <a class="wa-link" href="#" data-wa="I'm interested in the 4-bedroom family maisonette.">Ask about this
+                home</a>
+            </div>
+          </article>
+
+          <article class="card" data-type="rent">
+            <div class="card-art has-img">
+              <img src="2 b apartment.jpg" alt=" Modern 2-bedroom apartment" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag">For rent</span>
+              <h3>Modern 2-bedroom apartment</h3>
+              <p class="meta">2 bed · 2 bath · Secure parking</p>
+              <p class="price">KES 65,000 / month</p>
+              <a class="wa-link" href="#" data-wa="I'm interested in the modern 2-bedroom apartment.">Ask about this
+                home</a>
+            </div>
+          </article>
+          <article class="card" data-type="sale land">
+            <div class="card-art has-img">
+              <img src="plot.jpg" alt=" 50 by 100 plot" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag">For sale</span>
+              <h3>Serviced plot with title deed</h3>
+              <p class="meta">50 × 100 ft · Water and power on site</p>
+              <p class="price">KES 3,200,000</p>
+              <a class="wa-link" href="#" data-wa="I'm interested in the serviced plot with title deed.">Ask about this
+                plot</a>
+            </div>
+          </article>
+          <article class="card" data-type="sale">
+            <div class="card-art has-img">
+              <img src="3br town house.jpg" alt=" 3-bedroom townhouse" loading="lazy">
+            </div>
+            <div class="card-body"><span class="tag">For sale</span>
+              <h3>3-bedroom townhouse</h3>
+              <p class="meta">3 bed · 2 bath · Gated community</p>
+              <p class="price">KES 17,800,000</p><a class="wa-link" href="#"
+                data-wa="I'm interested in the 3-bedroom townhouse.">Ask about this property</a>
+            </div>
+          </article>
+          <article class="card" data-type="rent">
+            <div class="card-art has-img">
+              <img src="studio apt..jpg" alt=" Studio Apartment" loading="lazy">
+            </div>
+            <div class="card-body"><span class="tag">For rent</span>
+              <h3>Furnished 1-bedroom studio</h3>
+              <p class="meta">1 bed · 1 bath · Wi-Fi included</p>
+              <p class="price">KES 38,000 / month</p><a class="wa-link" href="#"
+                data-wa="I'm interested in the furnished 1-bedroom studio.">Ask about this property</a>
+            </div>
+          </article>
+          <article class="card" data-type="sale land">
+            <div class="card-art has-img">
+              <img src="qtr plot.jpg" alt=" Quatre acre plot" loading="lazy">
+            </div>
+            <div class="card-body"><span class="tag">Land</span>
+              <h3>Quarter-acre residential plot</h3>
+              <p class="meta">Fenced · Ready for building approval</p>
+              <p class="price">KES 5,400,000</p><a class="wa-link" href="#"
+                data-wa="I'm interested in the quarter-acre residential plot.">Ask about this property</a>
+            </div>
+          </article>
+        </div>
+        <p class="empty" id="empty" hidden>No properties in this category right now. Message us and we will look for
+          you.</p>
+        <p class="note">Looking for something specific? We hold properties that are not advertised yet. <a
+            href="contact.html">Tell us what you need</a>.</p>
+      </div>
+    </section>
+    <section class="section section-dark cta-band">
+      <div class="wrap cta-in">
+        <div>
+          <h2>Ready to talk about your next move?</h2>
+          <p>Message us and a named agent will reply the same day.</p>
+        </div>
+        <a href="#" class="btn btn-wa" data-wa="Hello Peak Properties, I'd like to talk about a property.">Chat on
+          WhatsApp</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot-grid">
+      <div><strong class="foot-brand">Peak Properties</strong>
+        <p>Honest property advice. Verified titles. Clear paperwork.</p>
+      </div>
+      <div><strong>Pages</strong><a href="index.html">Home</a><a href="properties.html">Properties</a><a
+          href="services.html">Services</a><a href="about.html">About us</a><a href="contact.html">Contact</a></div>
+      <div><strong>Contact</strong><a href="tel:+254700000000">+254 700 000 000</a><a
+          href="mailto:hello@peakproperties.com">hello@peakproperties.com</a><span>Mon–Sat, 8:00 am – 6:00 pm</span>
+      </div>
+    </div>
+    <div class="wrap foot-base">© <span id="year"></span> Peak Properties. All rights reserved.</div>
+  </footer>
+  <a href="#" class="wa-float" data-wa="Hello Peak Properties, I'd like some help."
+    aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+      <path fill="#fff"
+        d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3Zm0 23.6a10.600 10.600 0 0 1-5.400-1.500l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.600 10.600 0 1 1 16 26.600Zm5.800-7.900c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.400 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.400 3.400 14.700 14.700 0 0 0 5.600 4.900c2.100.9 2.900 1 3.900.8a3.300 3.300 0 0 0 2.200-1.600 2.700 2.700 0 0 0 .2-1.600c-.1-.1-.3-.2-.6-.4Z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
